@@ -42,6 +42,9 @@ function createWindow() {
   win.on('closed', () => {
     win = null
   })
+
+  win.once('focus', () => win.flashFrame(false))
+  win.flashFrame(true)
 }
 
 // Quit when all windows are closed.
