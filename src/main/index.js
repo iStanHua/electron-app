@@ -4,6 +4,8 @@ import { app, protocol, BrowserWindow } from 'electron'
 import path from 'path'
 import { createProtocol } from 'vue-cli-plugin-electron-builder/lib'
 
+console.log(process.env)
+
 const isDevelopment = process.env.NODE_ENV !== 'production'
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -24,6 +26,8 @@ function createWindow() {
   win = new BrowserWindow({
     width: 800,
     height: 600,
+    transparent: true,
+    frame: false,
     webPreferences: {
       nodeIntegration: true
     }
