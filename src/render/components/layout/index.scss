@@ -1,0 +1,125 @@
+.page {
+  display: flex;
+  height: 100%;
+  overflow: hidden;
+  background-color: $bg-color;
+
+  .nav-aside {
+    position: relative;
+    display: flex;
+    width: $size * 66;
+    padding-top: $size * 48;
+    overflow: hidden;
+    background-color: $base-color;
+    flex-direction: column;
+    -webkit-app-region: drag;
+
+    .nav-item {
+      color: $white-color;
+    }
+  }
+
+  .nav-content {
+    width: 110%;
+    height: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex: 1;
+
+    .nav-active {
+      color: $white-color;
+      background-color: $base-active-color;
+    }
+  }
+
+  .nav-view {
+    line-height: $size * 16;
+  }
+
+  .nav-item {
+    position: relative;
+    display: block;
+    padding: $size* 15 $size * 10 $size * 15 $size * 18;
+
+    .icon {
+      line-height: $size * 28;
+      font-size: $size * 28;
+      color: rgba($white-color, 0.8);
+      cursor: pointer;
+      -webkit-app-region: no-drag;
+
+    }
+
+    span {
+      position: absolute;
+      bottom: -10%;
+      left: 0;
+      z-index: 100;
+      display: none;
+      padding: $size * 8 $size * 10;
+      line-height: $size * 16;
+      background-color: rgba($black-color, 0.68);
+      border-radius: $size * 3;
+    }
+
+    &:hover {
+      .icon {
+        color: $white-color;
+      }
+
+      span {
+        display: block;
+        animation: fadeRin .35s ease;
+      }
+    }
+
+  }
+}
+
+.main {
+  display: flex;
+  width: 0;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  flex: 1;
+  flex-direction: column;
+
+  .nav-view {
+    width: $size*200;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: $white-color;
+    border-right: $size * 1 solid $border-color;
+  }
+
+  .nav-item {
+    &:hover {
+      background-color: rgba($bg-color, 0.68);
+    }
+  }
+
+  .nav-active {
+    background-color: $bg-color;
+  }
+}
+
+.main-content {
+  display: flex;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  flex: 1;
+}
+
+.content {
+  width: 0;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  flex: 1;
+}

@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "iconfont";
+  src: url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAUUAAsAAAAACjQAAATFAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDdAqGYIVZATYCJAMgCxIABCAFhG0HZhvRCDOjwsYBCOoLZP+jIds06XxVscc4f6OKJtp5Jniob7NeTw9kkKjImiNrAmTVuaqQWxf/OjMhAPbbT9tubFTU5CdZO9LsD3JA+S+X4v8cS71MO8zvFy6ZtWgaj/L53oAi2gpooDuSAfggpDp3KiYH4VU+DQEYiSMH0dKxuwUNFTlJAGL8mNYRaCk7ag1ToJn0JVeqiNXo0JQlynNglT958Q1FQgMFnUTO7O3q4KDhc75ulh6vh8EuAsV4XuBwIEggB1AZX1HqXyrDfA4S461aZSgQoCwJn0/W5/OCz1d8vvvzR183e7256ehFryn0gw869Chz/OOpIPSI3gzWUfCBz7HlsRIrOgwFWNFjWIEVBcNurEgMj/AiePEKlJ+cXttcEQAEA38jBiOUGuolCgL5cvZXIoxmNSAhyuwfrFc5M9FsFs62bsjMzO9rz9oYuu9185NbrBaLbfdrtTdeG2GxbrhgWvZKe9Ywm6OPpbMl015s7+NW/XST/JZeR/XcMPkvuyV07Tfd6zfvPxjmcqw/f3RXeKtr485jF0KdrZsOHdiwZXOIw7nB7bf/cARGZx91y5FU/0PHooXJnKnbenTw+hC/jWG6TeH+G0IHxBajzPrTzOL5BvdAYRJmTPRfv2XLAZP/oXNRU+3CF6sNr9FmrJD6SFHpFjab3WZxCEYLwWIlYCVY7QSTnWC33WP466/b3njD/tpr1ldfdfstPdp+bNFvPuI5bKw8/N7xH34MGupI8h6+G+7s3nNEhHncpOgJY2PHTU5/gMO+uDV8++CXPW988CI2MGV01+OdLUtWbNgX9PPfL/VoK3H3vhxUBFGi3PbIjm31ntikWPstVPwY7/vq0gWbO3Roar7WsEW91tRUV39N3dJwzetsbFxkdXpt1tnb/Tu0PKdkH+rw9/QDBzobVP17wxPR3Y/VBtWrrmXVtK114Nxa+9yB6b0pm+x74yjuo4rKvysrPgrO7B79xQr/XT9+eN2qdDj0UdRHW8/FSRWiKcdbWTF5q/3I/ovUiF4ud0ZMh/IZnTpNq+wQnT3Xle7uGDOjonPnqqkxHeZmO2sQMSRnhqY86a2aljGWjlurvsS4caKPSlypo46PoCxxwP1Aa5I1cPM+2gDw3pR3ZROA9EjA+5NcJYN8ozftuymn1V3jvSNvywYAuVQc/nMexT9aP79h/jW/aabPfN1bK//5y497b6qMW9BQoLXir6houUS9q8Shqde52XbEWP5S9MesAhh1FfwBw0G8P6YxtHUzCDRCY1DwIRYkGilIFZsDOkyUgB6NejCSTafrTQQzFYlQDUAWCwwIAjgFCn7cAkkAL5Aq9j3QEcZ3oCdASDBiE8F3NPGwFxGfXxmVoAV9gWioOcslz0HrN/pDUZxU+ex/5B5TMA9TtvSJDXmMc/rRLyIOHFOFD/M8LIVgZUpoZAgi634cXdk3DYbq5plXRiVoAX0BoqHm3LXlOff73+gPRXHNjDfxf+Qedw/MDEwtkJ/61mrGtezfj35BxG2Pc0wV+MCLRfMErOWHJTQyEHpk1z3jZiXXVj/Mb6zv9DbAiHysJhQhhSp0Qi98hCYM3E0nKv2xqnOs8Yp3plDHe0Z7MJ6ARpWRb32eH2tstbbNBgAAAA==');
+}
+
+.icon {
+  line-height: $size * 16;
+  font-family: "iconfont" !important;
+  font-size: $size * 16;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.i-minimize:before {
+  content: "\e600";
+}
+
+.i-maximize:before {
+  content: "\e68d";
+}
+
+.i-reduce:before {
+  content: "\ea43";
+}
+
+.i-close:before {
+  content: "\e6a0";
+}
+
+.i-tools:before {
+  content: "\e6c7";
+}
+
+.i-beaker:before {
+  content: "\e607";
+}
+
+.i-gear:before {
+  content: "\e630";
+}
