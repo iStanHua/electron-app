@@ -17,7 +17,11 @@
     "quicklink": "^1.0.1",
     "axios": "^0.19.0",
     "electron": "^6.0.5",
-    "winreg": "^1.2.4"
+    "winreg": "^1.2.4",
+    "node-notifier": "^5.4.3",
+    "stan-gif": "^1.0.1",
+    "tesseract.js": "^2.0.0-alpha.15",
+    "to-ico": "^1.1.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",

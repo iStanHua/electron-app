@@ -4,10 +4,9 @@ function padLeftZero(str) {
 }
 
 /**
-* 
+* 格式化日期
 * @param {String} date   日期
 * @param {String} format 日期格式
-* @returns 格式化日期
 */
 export function formatDate(date, format = 'yyyy-MM-dd hh:mm:ss') {
   date = new Date(date)
@@ -31,9 +30,8 @@ export function formatDate(date, format = 'yyyy-MM-dd hh:mm:ss') {
 }
 
 /**
-* 
+* 格式化日期为年前、月前、日前、小时前、分钟前、刚刚
 * @param {String} date   日期
-* @returns 格式化日期为年前、月前、日前、小时前、分钟前、刚刚
 */
 export function diffDate(date) {
   date = new Date(date)
@@ -68,7 +66,7 @@ export function diffDate(date) {
 
 /**
  * 货币格式化
- * @param {String} num 
+ * @param {String} num
  */
 export function moneyFormat(num) {
   return String(num).replace(/(?=((?!\b)\d{3})+$)/g, ',')

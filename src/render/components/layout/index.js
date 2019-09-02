@@ -38,10 +38,12 @@ export default {
       }
       let currentNav = this.navList[i]
       this.childNavList = currentNav.children || []
-      this.$router.push(currentNav.children && currentNav.children.length ? currentNav.path + '/' + currentNav.children[0].path : '/')
+      let path = currentNav.children && currentNav.children.length ? currentNav.path + '/' + currentNav.children[0].path : '/'
+      if (this.$route.path === path) return
+      this.$router.push(path)
     },
     childItemClick(i) {
-      console.log('/' + this.route + '/' + this.childNavList[i].path)
+      if (this.$route.path === '/' + this.route + '/' + this.childNavList[i].path) return
       this.$router.replace('/' + this.route + '/' + this.childNavList[i].path)
     }
   }

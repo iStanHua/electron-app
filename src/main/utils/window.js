@@ -85,10 +85,10 @@ export function disableAutoStart(callback) {
 
 // 获取是否开机启动
 export function getAutoStartValue(callback) {
-  let key = new WinReg({ hive: WinReg.HKCU, key: RUN_LOCATION });
+  let key = new WinReg({ hive: WinReg.HKCU, key: RUN_LOCATION })
   key.get('EUC', function (error, result) {
-    console.log("查询自动启动:" + JSON.stringify(result));
-    console.log("file:" + file);
+    console.log("查询自动启动:" + JSON.stringify(result))
+    console.log("file:" + file)
     if (result) {
       callback(true)
     }

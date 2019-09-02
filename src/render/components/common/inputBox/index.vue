@@ -15,6 +15,7 @@
     <div v-if="clearable&&isClear" class="append" @click="onClear">
       <i class="icon i-clear"></i>
     </div>
+
     <div v-if="$slots.append" class="append">
       <slot name="append"></slot>
     </div>

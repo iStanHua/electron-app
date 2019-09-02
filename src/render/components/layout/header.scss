@@ -15,5 +15,9 @@
     margin: 0 $size * 10;
     cursor: pointer;
     -webkit-app-region: no-drag;
+
+    &:hover {
+      color: $base-color;
+    }
   }
 }

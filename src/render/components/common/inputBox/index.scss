@@ -8,7 +8,7 @@
     bottom: 0;
     z-index: 1;
     display: flex;
-    width: $size * 30;
+    width: 30 * $size;
     justify-content: center;
     align-items: center;
   }
@@ -22,8 +22,8 @@
   }
 
   .i-clear {
-    line-height: $size * 20;
-    font-size: $size * 20;
+    line-height: 20 * $size;
+    font-size: 20 * $size;
     color: $disable-color;
     cursor: pointer;
 
@@ -35,19 +35,19 @@
 
 .input-prepend {
   .input {
-    padding-left: $size * 30;
+    padding-left: 30 * $size;
   }
 }
 
 .input-append {
   .input {
-    padding-right: $size * 30;
+    padding-right: 30 * $size;
   }
 }
 
 .input-prepend-append {
   .input {
-    padding-left: $size * 30;
-    padding-right: $size * 30;
+    padding-left: 30 * $size;
+    padding-right: 30 * $size;
   }
 }

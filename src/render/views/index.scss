@@ -1,65 +1,7 @@
 .home-page {
-  .grid-nav {
-    background-color: $white-color;
-  }
-
-  .nav-box {
-    .nav-item {
-      padding: $size *20;
-
-      &:hover {
-        color: $base-color;
-        background-color: $white-color;
-      }
-    }
-
-    .nav-active {
-      background-color: $white-color;
-    }
-  }
-
-  .grid-content {
-    padding: $size *10;
-  }
-
-  .section {
-    padding: $size *20 0;
-
-    .checkbox-group,
-    .input-box,
-    .radio-group {
-      margin: $size *10 0;
-    }
-  }
-
-  .img-box {
-    margin-top: $size *10;
-
-    img {
-      width: $size *380;
-    }
-  }
-
-  .lazy-img {
-    width: $size *380;
-    height: $size *214;
-    margin: $size *10 0;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .permission {
-    margin: $size *10;
-
-    &.disabled {
-      cursor: not-allowed;
-    }
-  }
-
   .circle-view {
     display: flex;
-    height: $size *380;
+    height: 380 * $size;
     justify-content: center;
     align-items: center;
 
@@ -69,21 +11,23 @@
       .circle-item {
         position: absolute;
         display: flex;
-        width: $size*40;
-        height: $size*40;
-        font-size: $size*14;
+        width: 40 * $size;
+        height: 40 * $size;
+        font-size: 14 * $size;
         color: $white-color;
         background-color: $base-color;
         border-radius: 100%;
         justify-content: center;
         align-items: center;
       }
+
       $count: 8;
-      $radius: $size*80;
+      $radius:80 * $size;
+
       @for $i from 1 through $count {
         .circle-item:nth-child(#{$i}) {
-          top: $radius*sin($i/$count*360deg) ;
-          left: $radius*cos($i/$count*360deg) ;
+          top: $radius*sin($i/360deg * $count);
+          left: $radius*cos($i/360deg * $count);
         }
       }
     }

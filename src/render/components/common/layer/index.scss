@@ -16,7 +16,7 @@
 .layer-box {
   position: relative;
   display: flex;
-  width: $size * 680;
+  width: 680 * $size;
   max-height: 68%;
   background-color: $white-color;
   animation-delay: 3000ms;
@@ -34,10 +34,10 @@
 
   .layer-header {
     display: flex;
-    padding: $size*10;
-    line-height: $size*22;
-    font-size: $size*18;
-    border-bottom: $size*1 solid $border-color;
+    padding: 10 * $size;
+    line-height: 22 * $size;
+    font-size: 18 * $size;
+    border-bottom: 1 * $size solid $border-color;
 
     .layer-title {
       width: 0;
@@ -48,10 +48,10 @@
 
   .layer-close {
     position: absolute;
-    top: -$size * 15;
-    right: -$size * 15;
+    top: -15 * $size;
+    right: -15 * $size;
     z-index: 1;
-    padding: $size * 5;
+    padding: 5 * $size;
     color: $white-color;
     background-color: rgba($black-color, 0.8);
     border-radius: 100%;

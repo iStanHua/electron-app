@@ -20,7 +20,7 @@ export default {
     },
     placeholder: {
       type: String,
-      default: '请输入'
+      default: ''
     },
     autofocus: Boolean,
     clearable: Boolean,

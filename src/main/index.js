@@ -25,7 +25,7 @@ function createWindow() {
     width: 1024,
     height: 768,
     autoHideMenuBar: true,
-    transparent: true,
+    // transparent: true,
     frame: false,
     show: false,
     webPreferences: {
@@ -48,6 +48,13 @@ function createWindow() {
 
   win.on('closed', () => {
     win = null
+  })
+
+  win.on('app-command', (e, cmd) => {
+    // 当用户点击鼠标返回按钮时，导航窗口会后退
+    if (cmd === 'browser-backward' && win.webContents.canGoBack()) {
+      win.webContents.goBack()
+    }
   })
 
   // 显示窗口将没有视觉闪烁
@@ -137,4 +144,9 @@ ipcMain.on('ipc-max-window', (e, arg) => {
 // 关闭窗口
 ipcMain.on('ipc-close-window', () => {
   app.quit()
+})
+
+// 在线/离线事件探测
+ipcMain.on('online-status-changed', (event, status) => {
+  console.log(status)
 })

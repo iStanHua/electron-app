@@ -6,9 +6,9 @@
 
   &:before {
     content: '';
-    width: $size *16;
-    height: $size *16;
-    border-width: $size *2;
+    width: 16 * $size;
+    height: 16 * $size;
+    border-width: 2 * $size;
     border-style: solid;
     border-color: transparent rgba($base-color, 1) rgba($base-color, 1) transparent;
     border-radius: 50%;

@@ -2,7 +2,7 @@ import fs from 'fs'
 import os from 'os'
 import path from 'path'
 
-import { desktopCapturer, screen, shell } from 'electron'
+import { desktopCapturer, remote, shell } from 'electron'
 
 export default {
   name: 'ScreenshotPage',
@@ -35,17 +35,14 @@ export default {
             fs.writeFile(screenshotPath, source.thumbnail.toPNG(), (error) => {
               if (error) return console.log(error)
               shell.openExternal(`file://${screenshotPath}`)
-
-              const message = `Saved screenshot to: ${screenshotPath}`
-              screenshotMsg.textContent = message
+              this.message = `Saved screenshot to: ${screenshotPath}`
             })
           }
         })
       })
 
       function determineScreenShotSize() {
-        console.log(screen)
-        const screenSize = screen.getPrimaryDisplay().workAreaSize
+        const screenSize = remote.screen.getPrimaryDisplay().workAreaSize
         const maxDimension = Math.max(screenSize.width, screenSize.height)
         return {
           width: maxDimension * window.devicePixelRatio,
